@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  background: #001b6b;
+  color: #ffd84d;
+  font-family: "Courier New", monospace;
+}
+
+.frame {
+  max-width: 1400px;
+  margin: 20px auto;
+  border: 4px solid #ffd84d;
+  padding: 16px;
+  background: #00248a;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  border-bottom: 4px solid #ffd84d;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.top-grid {
+  grid-template-columns: 1fr 1fr 1.4fr;
+  align-items: start;
+}
+
+.panel {
+  border: 3px solid #ffd84d;
+  padding: 12px;
+  background: #001f78;
+  min-height: 0;
+}
+
+.panel h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.scrollbox {
+  max-height: 260px;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.console-panel {
+  margin-top: 12px;
+}
+
+.console {
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  min-height: 260px;
+  max-height: 260px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 18px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+input,
+button,
+select {
+  font: inherit;
+  padding: 10px;
+  border: 2px solid #ffd84d;
+  background: #001b6b;
+  color: #ffd84d;
+}
+
+input {
+  flex: 1;
+  min-width: 220px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.ai-box {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.ai-section + .ai-section {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 2px solid #ffd84d;
+}
+
+.ai-heading {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ai-table,
+.ai-questions {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ai-table th,
+.ai-table td,
+.ai-questions td {
+  border: 1px solid #ffd84d;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.ai-table th:first-child,
+.ai-table td:first-child,
+.ai-questions td:first-child {
+  text-align: left;
+}
+
+.obj-name,
+.q-id {
+  white-space: nowrap;
+}
+
+.w-pos {
+  color: #7CFF7C;
+}
+
+.w-neg {
+  color: #FF8A8A;
+}
+
+.w-zero {
+  color: #FFE28A;
+}
+
+#basic .active-line {
+  background: #ffd84d;
+  color: #001b6b;
+}
+
+@media (max-width: 900px) {
+  .top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scrollbox,
+  .console {
+    max-height: 220px;
+  }
+}

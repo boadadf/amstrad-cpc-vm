@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "IS IT AN ANIMAL?",
+    "IS IT SMALL?",
+    "DOES IT BARK?",
+    "IS IT EDIBLE?"
+  ],
+  "objects": [
+    { "name": "DOG", "prior": 12, "weights": { "ANIMAL": 10, "SMALL": -2, "BARKS": 9, "EDIBLE": -8 } },
+    { "name": "CAT", "prior": 11, "weights": { "ANIMAL": 10, "SMALL": 2, "BARKS": -7, "EDIBLE": -8 } },
+    { "name": "HAMSTER", "prior": 10, "weights": { "ANIMAL": 10, "SMALL": 9, "BARKS": -6, "EDIBLE": -8 } },
+    { "name": "CARROT", "prior": 8, "weights": { "ANIMAL": -10, "SMALL": 3, "BARKS": -9, "EDIBLE": 8 } },
+    { "name": "ROCK", "prior": 7, "weights": { "ANIMAL": -10, "SMALL": 1, "BARKS": -9, "EDIBLE": -10 } }
+  ]
+}

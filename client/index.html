@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Animal Vegetable Mineral</title>
+  <link rel="stylesheet" href="/client/style.css" />
+</head>
+<body>
+  <div class="frame">
+    <div class="title">ANIMAL VEGETABLE MINERAL / VIRTUAL CPC</div>
+
+    <div class="grid top-grid">
+      <section class="panel">
+        <h2>RUNTIME</h2>
+        <pre id="basic" class="scrollbox"></pre>
+      </section>
+
+      <section class="panel">
+        <h2>SCORE</h2>
+        <pre id="vars" class="scrollbox"></pre>
+      </section>
+
+      <section class="panel">
+        <h2>TRAINED-MODEL</h2>
+        <div id="ai" class="scrollbox ai-box">NO DATA</div>
+      </section>
+    </div>
+
+    <section class="panel console-panel">
+      <h2>CONSOLE</h2>
+      <div id="console" class="console"></div>
+
+      <div class="input-row">
+        <input id="input" type="text" autocomplete="off" spellcheck="false" />
+        <button id="send">SEND</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="/client/app.js"></script>
+</body>
+</html>

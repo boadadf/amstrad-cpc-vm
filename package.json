@@ -1,0 +1,12 @@
+{
+  "name": "cpc-ai-remake",
+  "version": "0.1.0",
+  "description": "Weighted Animal Vegetable Mineral remake with BASIC-style VM and CPC-inspired UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
