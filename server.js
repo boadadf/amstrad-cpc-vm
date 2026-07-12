@@ -30,7 +30,7 @@ const SkipCommand = require('./commands/SKIP');
 const SoundCommand = require('./commands/SOUND');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const basPath = path.join(__dirname, 'examples', 'animal-vegetable-mineral.bas');
 
 app.use(express.json());
